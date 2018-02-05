@@ -1,3 +1,6 @@
+;;修改tab缩进空格C/C++
+(setq c-basic-offset 4)
+
 ;; 关闭工具栏，tool-bar-mode 即为一个 Minor Mode
 (tool-bar-mode -1)
 ;;关闭菜单栏
@@ -39,6 +42,7 @@
 		smartparens
 		apropospriate-theme
 		atom-one-dark-theme
+;;		google-c-style
 		) "Default packages")
 
  (setq package-selected-packages muyuqing/packages)
@@ -165,7 +169,7 @@
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (company monokai-theme hungry-delete smex swiper counsel smartparens))))
+    (google-c-style company monokai-theme hungry-delete smex swiper counsel smartparens))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -179,3 +183,8 @@
 ;;设置窗口
 ;;(set-frame-height (selected-frame)35)
 ;;(set-frame-width (selected-frame)145)
+
+;;加载google-c-stytle
+(add-hook 'C-mode-common-hook 'google-set-c-stytle)
+(add-hook 'c-mode-common-hook 'google-make-newline-indent)
+
