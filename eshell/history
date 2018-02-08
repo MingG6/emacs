@@ -1,0 +1,27 @@
+gcc 1.c 
+exit
+gcc 1.c 
+./a.out 
+clear
+
+exit
+gcc 1.c 
+exit
+gcc 1.c 
+exit
+gcc 1.c 
+exit
+gcc 1.c 
+./a.out 
+exit
+gcc 1.c 
+./a.out 
+exit
+gcc 1.c 
+gcc 2.c 
+exit
+gcc 2.c 
+exit
+gcc 2.c 
+./a.out 
+exit

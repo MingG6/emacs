@@ -1,0 +1,21 @@
+
+;; ----- smex-history -----
+(
+ eshell
+ package-list-packages
+ info
+ Info-menu
+ org-mode
+ package-autoremove
+ cd
+)
+
+;; ----- smex-data -----
+(
+ (package-autoremove . 2)
+ (package-list-packages . 5)
+ (org-mode . 4)
+ (info . 3)
+ (Info-menu . 1)
+ (eshell . 10)
+)
